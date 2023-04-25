@@ -1,0 +1,29 @@
+/* Global */
+
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: inline-flex;
+}
+
+nav.navbar-nav{
+    margin-left: auto; 
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;    
+}
+
+a.nav-link {
+    padding: 5px;
+}
+
+
+/* Footer */
+
+
+
+/* Homepage */
+.landing-img h1 {
+    text-align: center;
+}
