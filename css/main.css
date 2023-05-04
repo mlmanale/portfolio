@@ -1,30 +1,221 @@
 /* Global */
 
+html {
+    scroll-behavior: smooth;
+  }
 
-/* Navbar */
-.navbar {
-    width: 100%;
-    display: inline-flex;
+:root {
+    --site-font: "june-expt-variable", sans-serif;
 }
+/* Desktop */
 
-nav.navbar-nav{
-    margin-left: auto; 
-    margin-right: 5px;
-    margin-top: auto;
-    margin-bottom: auto;    
-}
+@media screen and (min-width: 480px) {
+    /* Navbar */
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
 
-a.nav-link {
-    padding: 5px;
-}
+    nav.navbar-nav{
+        margin-left: auto; 
+        margin-right: 5px;
+        margin-top: auto;
+        margin-bottom: auto;    
+        padding-top: 5px;
+       
+    }
+
+    a.nav-link {
+        padding: 15px;
+        font-family: var(--site-font);
+        color: black;
+        font-size: 25px;
+        vertical-align: middle;
+    }
+
+    a.nav-link:link {
+        text-decoration: none;
+    }
+    a.nav-link:visited {
+        text-decoration: none;
+    }
+    a.nav-link:hover {
+        text-decoration: none;
+        color:gray;
+    }
+    a.nav-link:active {
+        text-decoration: none;
+        color:black;
+    }
+    
+    .navbar-logo img {
+        padding-top: 5px;
+        padding-left: 10px;
+        max-width: 325px;
+    }
+
+    /* Footer */
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .footer-logo img{
+        max-width: 40px;
+    }
+
+    a.footer-link {
+        font-family: var(--site-font);
+        font-size: 15px;
+        color: black;
+        padding-left: 15px;
+    }
+
+    a.footer-link:link {
+        text-decoration: none;
+    }
+    a.footer-link:visited {
+        text-decoration: none;
+    }
+    a.footer-link:hover {
+        text-decoration: none;
+        color:gray;
+    }
+    a.footer-link:active {
+        text-decoration: none;
+        color:black;
+    }
 
 
-/* Footer */
+    /* Homepage */
+    .landing-img h1 {
+        text-align: center;
+        font-size: 80px;
+        font-family: var(--site-font);
+        color: whitesmoke;
+    }
+
+    .landing-img p{
+        text-align: center;
+        font-size: 30px;
+        font-family: var(--site-font);
+        color: whitesmoke;
+        margin-top: -40px;
+    }
+
+    .landing-img {
+        display: flex;
+        min-height: 600px;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../img/portfoliobg.png");
+        background-size: auto 100%;
+        background-position: center;
+    }
+
+    .header-wrapper {
+        max-width: 500px;
+    }
+
+    .featured h2 {
+        text-align: center;
+        font-size: 50px;
+        font-family: var(--site-font);
+        color: black;
+    }
+
+    .ft-work h3 {
+        font-size: 30px;
+        font-family: var(--site-font);
+        color: black;
+    }
+
+    .ft-work p {
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: black;
+    }
+    .ft-tags {
+       margin-top:100px;
+    }
+
+    .ft-tags p{
+        display: inline; 
+        padding: 15px;
+        background-color: cornflowerblue;
+        border-radius: 50px;
+    }
+    
+    .ft-work1-wrapper, .ft-work2-wrapper, .ft-work3-wrapper {
+        display: flex;
+        background-color: beige;
+        margin: 30px 80px;
+    }
+
+    .ft-work {
+        margin-left: 30px;
+    }
+
+    .ft-work-img {
+        margin: 30px 0px 30px 30px;
+    }
+
+    /* Designs */
+
+    .work-head h1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: var(--site-font);
+        color: black;
+    }
+
+    /* Gallery code taken from w3schools */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .column {
+        flex: 20%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 45%;
+          max-width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+
+    /* End w3schools gallery */
+ }
 
 
+/* Mobile */
+@media screen and (max-width: 479px) {
+    /* Phone nav menu/hamburger */
 
-/* Homepage */
-.landing-img h1 {
-    text-align: center;
-    font-size: 600%;
 }
