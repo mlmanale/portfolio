@@ -193,29 +193,74 @@ html {
         vertical-align: middle;
         width: 100%;
       }
-      
-      /* Responsive layout - makes a two column-layout instead of four columns */
-      @media screen and (max-width: 800px) {
-        .column {
-          flex: 45%;
-          max-width: 50%;
-        }
-      }
-      
-      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 600px) {
-        .column {
-          flex: 100%;
-          max-width: 100%;
-        }
-      }
 
     /* End w3schools gallery */
- }
+
+    /* Gallery individual item pages */
+    .design-item {
+       display:flex; 
+       margin: 50px;
+    }    
+    .design-img img {
+        max-width: 100%;
+        max-height: 600px;
+    }
+    .design-blurb {
+        margin-left: 30px;
+        font-family: var(--site-font);
+    }
+    
+}
+
+/* Makes a two column-layout instead of four columns for gallery and switches to stacked nav*/
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: inline;
+        text-align: center;
+    }
+
+    .navbar-logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .navbar-logo img {
+        max-width: 500px;
+    }
+
+    .navbar-nav {
+        margin-top: 50px;
+    }
+    
+    .column {
+      flex: 45%;
+      max-width: 50%;
+    }
+
+  }
 
 
 /* Mobile */
-@media screen and (max-width: 479px) {
-    /* Phone nav menu/hamburger */
+@media screen and (max-width: 600px) {
+    /* Gallery for single column */
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    /* Gallery item pages */
+    .design-item {
+        display: inline;
+        margin: 20px;
+    }
+    .design-img img {
+        max-width: 100%;
+    }
+    .design-img {
+        text-align: center;
+        max-width: 100%;
+    }
+  
+
 
 }
